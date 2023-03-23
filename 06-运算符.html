@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    /*
+        ==
+            1.判断类型是否一样，如果不一样，则进行类型转换
+            2.再去比较其值
+        ===
+            1.判断类型是否一样，如果不一样，直接返回false
+            2.再去比较其值
+    */
+
+    var a = 20;
+    var b = "20";
+
+    document.write(a == b); // true
+    document.write(a === b); // false
+
+    /*
+    转number
+    1. string -> number
+
+    2. 布尔 -> number
+        true1 false0 (贾玲)
+    */
+    var str = "50";
+    document.write(parseInt(str));
+    document.write(parseInt(str) + 1);
+
+
+    var flag = true;
+    document.write(parseInt(true));
+
+</script>
+    
+</body>
+</html>
